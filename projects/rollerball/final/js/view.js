@@ -6,7 +6,7 @@ var camera = new GL.Vector(26.215,7.135,30.696);
 var sphere_radius = 0.1;
 var mesh = GL.Mesh.sphere({ normals: true, radius: sphere_radius, detail: 12 }).computeWireframe();
 var plane_mesh = GL.Mesh.plane({normals: true, coords: true}).transform(GL.Matrix.scale(150, 150, 1));
-var server_prefix = "http://localhost/public/rollerball/";
+var server_prefix = "https://slash0bz.github.io/projects/rollerball/final/";
 var fs_prefix = "texture/1/";
 var skybox_front;
 var skybox_back;
