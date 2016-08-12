@@ -127,6 +127,8 @@ var shader_phong_rail = new GL.Shader('\
 }\
   ');
 
+//Below three shaders are modified from Lightgl tutorials.
+
 var shader_phong_shadow =  new GL.Shader('\
   uniform mat4 shadowMapMatrix;\
   uniform vec3 light;\
@@ -219,6 +221,7 @@ var lowerRailMesh;
 var frontRailMesh;
 var backRailMesh;
 var capRailMesh;
+//This function is referenced from lightgl tutorial.
 function cameraForBoundingSphere(light, boundingSphere) {
   var distance = boundingSphere.center.subtract(light).length();
   var angle = 180 - 2 * Math.acos(boundingSphere.radius / distance) * 180 / Math.PI;
